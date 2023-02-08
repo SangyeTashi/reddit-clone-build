@@ -13,6 +13,7 @@ const SignUp: React.FC<SignUpProps> = () => {
         confirmPassword: '',
     });
 
+    // Firebase logic
     const onSubmit = () => {};
 
     const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -90,7 +91,7 @@ const SignUp: React.FC<SignUpProps> = () => {
                 Sign Up
             </Button>
             <Flex justify="center" align="center" fontSize="9pt">
-                <Text mr={1}>Already a user?</Text>
+                <Text mr={1}>Already a redditor?</Text>
                 <Text
                     color="blue.500"
                     fontWeight={700}
