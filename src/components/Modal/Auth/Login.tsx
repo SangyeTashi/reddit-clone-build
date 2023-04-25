@@ -73,9 +73,19 @@ const Login: React.FC<LoginProps> = () => {
                 }}
             />
             <Text>
-                {FIREBASE_ERRORS[error?.message as keyof FIREBASE_ERRORS]}
+                {
+                    FIREBASE_ERRORS[
+                        error?.message as keyof typeof FIREBASE_ERRORS
+                    ]
+                }
             </Text>
-            <Button type="submit" width="100%" height="36px" my={2}>
+            <Button
+                type="submit"
+                width="100%"
+                height="36px"
+                my={2}
+                isLoading={loading}
+            >
                 Log In
             </Button>
             <Flex justify="center" align="center" fontSize="9pt">
