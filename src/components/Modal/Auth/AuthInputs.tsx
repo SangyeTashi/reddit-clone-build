@@ -4,6 +4,7 @@ import React from 'react';
 import { useRecoilValue } from 'recoil';
 import SignUp from './SignUp';
 import Login from './Login';
+import ResetPassword from './ResetPassword';
 
 const AuthInputs: React.FC = () => {
     const { view } = useRecoilValue(authModalState);
