@@ -29,7 +29,9 @@ const AuthModal: React.FC = () => {
         }));
     }
 
-    useEffect(() => {}, [user]);
+    useEffect(() => {
+        handleClose();
+    }, [user]);
     return (
         <>
             <Modal isOpen={modalState.open} onClose={handleClose}>

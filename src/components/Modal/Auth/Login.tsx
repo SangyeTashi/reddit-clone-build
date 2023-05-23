@@ -29,7 +29,7 @@ const Login: React.FC<LoginProps> = () => {
         }));
     };
     return (
-        <form onSubmit={() => {}}>
+        <form onSubmit={onSubmit}>
             <Input
                 required
                 name="email"
